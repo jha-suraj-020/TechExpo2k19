@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tech Expo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/8ff3a20795.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script type="text/javascript">
+        var zero = 0
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                $('.navbar1').toggleClass('hide', $(window).scrollTop()
+                    > zero);
+                zero = $(window).scrollTop();
+            })
+        })
+        function clock() {
+            var hours = document.getElementById('hours');
+            var minutes = document.getElementById('minutes');
+            var seconds = document.getElementById('seconds');
+
+            var h = new Date().getHours();
+            var m = new Date().getMinutes();
+            var s = new Date().getSeconds();
+
+            hours.innerHTML = h;
+            minutes.innerHTML = m;
+            seconds.innerHTML = s;
+        }
+        var interval = setInterval(clock, 1000);
+    </script>
+</head>
+
+<body>
+    <div class="navbar1">
+        <a href="#" class="channel"><img src="img/sit.png" alt=""></a>
+        <ul>
+            <li><a href="#intro" class="active">Intro</a></li>
+            <li><a href="#steps">Steps</a></li>
+            <li><a href="#sponsers">SPONSERS</a></li>
+            <li><a href="#help">HELP DESK</a></li>
+        </ul>
+    </div>
+    <section class="sec1">
+        <div class="row secc">
+            <div class="col-md-8">
+                <div class="bannerText">
+                    <h1>Tech Expo</h1><br>
+                    <h2>Finds your Innovations</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta possimus id maxime temporibus
+                        libero
+                        praesentium harum perferendis aperiam alias earum. Id voluptas eaque assumenda similique.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="img/bulb.png" alt="" class="bulb">
+            </div>
+        </div>
+    </section>
+    <section id="intro" class="sec2 text-center">
+        <h1 class="title"><b>INTRO</b></h1 class="title"><br>
+        <p>This facet of Tech-Expo consists of engineering students from various colleges across India to showcase their
+            projects which solve real world problems currently existing in the society today. Check out list of domains.
+            A stringent selection process will shortlist the best ideas/teams who can participate at this project
+            exhibition. Ample amount of time will be given to the shortlisted teams to prepare their projects for the
+            same.
+        </p><br>
+        <h1><b>PRIZE</b></h1><br>
+        <p>Attractive Cash Prizes for the Winning Teams</p><br>
+        <div class="row">
+            <div class="first col-lg-4"><img src="img/1.png"><br><br>
+                <p>1st Prize : ₹20000</p>
+            </div>
+            <div class="first col-lg-4"><img src="img/2.png"><br><br>
+                <p>2nd Prize : ₹15000</p>
+            </div>
+            <div class="first col-lg-4"><img src="img/3.png"><br><br>
+                <p>3rd Prize : ₹12000</p>
+            </div>
+        </div><br><br>
+        <!--<h2><b>PRESENTED BY</b></h2><br>
+        <div class="row">
+            <div class="col-md-4 presenters">
+                <img src="img/ieee.png" class="sark">
+            </div>
+            <div class="col-md-4 presenters">
+                <img src="img/sit.png" class="sit">
+            </div>
+            <div class="col-md-4 presenters">
+                <img src="img/Logo-light.png" class="sark">
+            </div>
+        </div>-->
+    </section>
+    <section class="sec3"></section>
+    <section id="steps" class="sec2 text-center">
+        <h1 class="title"><b>STEPS FOR STUDENTS</b></h1><br>
+        <div class="font">
+            <br>
+            <h2><b>Step 1:</b></h2> Find a team. The minimum number of members in a team is 2 and maximum is 4.<br>
+            <br>
+            <h2><b>Step 2:</b></h2>Take a look at our problem <a id="domain"> domains</a>.<br>
+            <br>
+            <h2><b>Step 3:</b></h2> Select a domain you wish to work on. Here, you have to find a problem statement
+            under that domain before you begin to work on a solution for it. Ex: Under the domain ‘Reduction of
+            Crime and Theft’, your problem statement may be ‘To provide a more feasible way to deal with theft
+            detection ’.<br>
+            <br>
+            <h2><b>Step 4:</b></h2>Register with us and send us your abstract at <b
+                style="color:skyblue;">techexpo6@gmail.com</b> .<br> The Last date for registering is September
+            21<sup>th</sup> (extended).<br> Registration fee is ₹100 per member which is to be paid if your abstract
+            is shortlisted. Only the team leader is supposed to submit the abstract on behalf of the team.<br>
+            <br>
+            <h2><b>Step 5:</b></h2> The shortlisted teams will be allowed to participate and exhibit their projects
+            on 6th October 2018.
+            <br>
+            <br>
+            <h2><b>All the best!</b></h2><br>
+            <br>
+            <h3>Location : <br></h3>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31058.5820893395!2d77.11328483955077!3d13.33018770000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1534953702187"
+            width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    <section class="sec4"></section>
+    <section id="sponsers" class="sec2 text-center">
+        <h1 class="title"><b>SPONSERS</b></h1><br>
+        <div class="container">
+            <div class="card">
+                <div class="imgbox">
+                    <img src="img/silver-and-black-laptop-computer-1229861.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi animi harum dolor
+                        voluptatibus fugiat incidunt, odio aliquam consequuntur non? Rerum deserunt cum iusto ea.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="img/turned-on-laptop-with-flash-drive-plug-in-591647.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi animi harum dolor
+                        voluptatibus fugiat incidunt, odio aliquam consequuntur non? Rerum deserunt cum iusto ea.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgbox">
+                    <img src="img/brown-light-on-black-background-1108812.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi animi harum dolor
+                        voluptatibus fugiat incidunt, odio aliquam consequuntur non? Rerum deserunt cum iusto ea.</p>
+                </div>
+            </div>
+        </div>
+        <h3 class="font"> We are looking for sponsors! If you would like to sponsor our event, please do contact us!
+        </h3>
+    </section>
+    <section class="sec5"></section>
+    <section id="help" class="sec2 text-center">
+        <h1 class="title"><b>HELPDESK</b></h1><br>
+        <h3 class="font">
+            Mail us at : <b style="color:skyblue;">techexpo6@gmail.com</b><br><br>
+            <div class="text-center">Contact Us At :</div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <br> Akash Kumar Srivastava : +91 7004332558
+                    <br> Pratik Kumar : +91 8553050984
+                </div>
+                <div class="col-lg-6">
+                    <br> Spoorthy S : +91 7090539445
+                    <br> Lalitha Shree : +91 7338406532
+                </div>
+            </div>
+        </h3>
+    </section>
+    <div class="clock1">
+        <div id="clock">
+            <h2>the time is now</h2>
+            <div id="time">
+                <div><span id="hours">00</span><span>Hours</span></div>
+                <div><span id="minutes">00</span><span>Minutes</span></div>
+                <div><span id="seconds">00</span><span>Seconds</span></div>
+            </div>
+        </div>
+    </div>
+    <nav class="fixed-bottom footer text-center">
+        <h5>Developed By <i class="fas fa-heartbeat"></i> Suraj Jha</h5>
+    </nav>
+</body>
+
+</html>
