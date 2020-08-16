@@ -1,0 +1,29 @@
+@font-face {
+    font-family: batman;
+    src: url(fonts/batmfa_.ttf);
+}
+@font-face{
+	font-family: robo;
+	src: url(fonts/ROBO.TTF);
+}
+@font-face{
+    font-family: intro;
+    src:url(fonts/Intro.otf);
+}
+@font-face{
+  font-family: archive;
+  src:url(fonts/Archive.ttf);
+}
+@font-face{
+  font-family: Righteous;
+  src:url(fonts/Righteous-Regular.ttf);
+}
+@font-face{
+  font-family: Quicksand;
+  src:url(fonts/Quicksand-Regular.ttf);
+}
+
+@font-face{
+  font-family: Saucer;
+  src:url(fonts/SaucerBB.ttf);
+}

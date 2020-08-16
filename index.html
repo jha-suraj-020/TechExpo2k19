@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tech Expo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TechExpo 2K20</title>
+    <link rel="stylesheet" href="CSS/style1.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/font.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://kit.fontawesome.com/8ff3a20795.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/8ff3a20795.js"></script>
     <script type="text/javascript">
         var zero = 0
         $(document).ready(function () {
@@ -19,184 +20,402 @@
                 zero = $(window).scrollTop();
             })
         })
-        function clock() {
-            var hours = document.getElementById('hours');
-            var minutes = document.getElementById('minutes');
-            var seconds = document.getElementById('seconds');
-
-            var h = new Date().getHours();
-            var m = new Date().getMinutes();
-            var s = new Date().getSeconds();
-
-            hours.innerHTML = h;
-            minutes.innerHTML = m;
-            seconds.innerHTML = s;
-        }
-        var interval = setInterval(clock, 1000);
+        $(document).ready(function () {
+            $('.menu-toggle').click(function (event) {
+                $('nav').toggleClass('active');
+                event.stopPropagation();
+            })
+        })
+        $(document).ready(function () {
+            $('body').click(function () {
+                $('nav').removeClass('active')
+            })
+        })
+        $(document).ready(function () {
+            $("#first").on("mouseenter", function () {
+                $(".introbefore").slideDown();
+            })
+        })
+        $(document).ready(function () {
+            $("#first").on("mouseleave", function () {
+                $(".introbefore").slideUp();
+            })
+        })
+        $(document).ready(function () {
+            $("#second").on("mouseenter", function () {
+                $(".steppbefore").slideDown();
+            })
+        })
+        $(document).ready(function () {
+            $("#second").on("mouseleave", function () {
+                $(".steppbefore").slideUp();
+            })
+        })
+        $(document).ready(function () {
+            $("#third").on("mouseenter", function () {
+                $(".domainbefore").slideDown();
+            })
+        })
+        $(document).ready(function () {
+            $("#third").on("mouseleave", function () {
+                $(".domainbefore").slideUp();
+            })
+        })
+        $(document).ready(function () {
+            $("#forth").on("mouseenter", function () {
+                $(".sponserbefore").slideDown();
+            })
+        })
+        $(document).ready(function () {
+            $("#forth").on("mouseleave", function () {
+                $(".sponserbefore").slideUp();
+            })
+        })
+        $(document).ready(function () {
+            $("#fifth").on("mouseenter", function () {
+                $(".helpbefore").slideDown();
+            })
+        })
+        $(document).ready(function () {
+            $("#fifth").on("mouseleave", function () {
+                $(".helpbefore").slideUp();
+            })
+        })
+        $(document).ready(function () {
+            $("#sixth").on("mouseenter", function () {
+                $(".registerbefore").slideDown();
+            })
+        })
+        $(document).ready(function () {
+            $("#sixth").on("mouseleave", function () {
+                $(".registerbefore").slideUp();
+            })
+        })
+        $(document).ready(function () {
+            $("#first").on("touchstart", function () {
+                $(".introbefore").slideDown();
+            })
+        })
+        $(document).ready(function () {
+            $("#second").on("touchstart", function () {
+                $(".steppbefore").slideDown();
+            })
+        })
+        $(document).ready(function () {
+            $("#third").on("touchstart", function () {
+                $(".domainbefore").slideDown();
+            })
+        })
+        $(document).ready(function () {
+            $("#forth").on("touchstart", function () {
+                $(".sponserbefore").slideDown();
+            })
+        })
+        $(document).ready(function () {
+            $("#fifth").on("touchstart", function () {
+                $(".helpbefore").slideDown();
+            })
+        })
+        $(document).ready(function () {
+            $("#sixth").on("touchstart", function () {
+                $(".registerbefore").slideDown();
+            })
+        })
     </script>
 </head>
 
 <body>
-    <div class="navbar1">
-        <a href="#" class="channel"><img src="img/sit.png" alt=""></a>
-        <ul>
-            <li><a href="#intro" class="active">Intro</a></li>
-            <li><a href="#steps">Steps</a></li>
-            <li><a href="#sponsers">SPONSERS</a></li>
-            <li><a href="#help">HELP DESK</a></li>
-        </ul>
+    <div id="particles-js">
+        <div class="pp">
+            <div class="navbar1">
+                <header>
+                    <a href="#" class="channel"><img src="img/sit.png" alt=""></a>
+                    <nav>
+                        <ul>
+                            <li><a href="#first">Intro</a></li>
+                            <li><a href="#second">STEPS</a></li>
+                            <li><a href="#third">DOMAINS</a></li>
+                            <li><a href="#sixth">REGISTER</a></li>
+                            <li><a href="#forth">SPONSORS</a></li>
+                            <li><a href="#fifth">HELP DESK</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </header>
+            </div>
+            <section class="sec1" id="2">
+                <div class="row secc">
+                    <div class="bannerText col-md-7">
+                        <h1>Tech Expo</h1><br>
+                        <h2>National Level Technical Exhibition</h2>
+                    </div>
+                    <div class="col-md-5" id="timerr">
+                        <div id="clockdiv">
+                            <div class="div1">
+                                <span id="days"></span>
+                                <div class="smalltext">Days</div>
+                            </div>
+                            <div class="div1">
+                                <span id="hours"></span>
+                                <div class="smalltext">Hours</div>
+                            </div>
+                            <div class="div1">
+                                <span id="minutes"></span>
+                                <div class="smalltext">Minutes</div>
+                            </div>
+                            <div class="div1">
+                                <span id="seconds"></span>
+                                <div class="smalltext">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
-    <section class="sec1">
-        <div class="row secc">
-            <div class="col-md-8">
-                <div class="bannerText">
-                    <h1>Tech Expo</h1><br>
-                    <h2>Finds your Innovations</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta possimus id maxime temporibus
-                        libero
-                        praesentium harum perferendis aperiam alias earum. Id voluptas eaque assumenda similique.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <img src="img/bulb.png" alt="" class="bulb">
-            </div>
+    <div id="first">
+        <div class="introbefore text-center">
+            <h1 class="title"><b>INTRO</b></h1><br>
         </div>
-    </section>
-    <section id="intro" class="sec2 text-center">
-        <h1 class="title"><b>INTRO</b></h1 class="title"><br>
-        <p>This facet of Tech-Expo consists of engineering students from various colleges across India to showcase their
-            projects which solve real world problems currently existing in the society today. Check out list of domains.
-            A stringent selection process will shortlist the best ideas/teams who can participate at this project
-            exhibition. Ample amount of time will be given to the shortlisted teams to prepare their projects for the
-            same.
-        </p><br>
-        <h1><b>PRIZE</b></h1><br>
-        <p>Attractive Cash Prizes for the Winning Teams</p><br>
-        <div class="row">
-            <div class="first col-lg-4"><img src="img/1.png"><br><br>
-                <p>1st Prize : ₹20000</p>
-            </div>
-            <div class="first col-lg-4"><img src="img/2.png"><br><br>
-                <p>2nd Prize : ₹15000</p>
-            </div>
-            <div class="first col-lg-4"><img src="img/3.png"><br><br>
-                <p>3rd Prize : ₹12000</p>
-            </div>
-        </div><br><br>
-        <!--<h2><b>PRESENTED BY</b></h2><br>
-        <div class="row">
-            <div class="col-md-4 presenters">
-                <img src="img/ieee.png" class="sark">
-            </div>
-            <div class="col-md-4 presenters">
-                <img src="img/sit.png" class="sit">
-            </div>
-            <div class="col-md-4 presenters">
-                <img src="img/Logo-light.png" class="sark">
-            </div>
-        </div>-->
-    </section>
-    <section class="sec3"></section>
-    <section id="steps" class="sec2 text-center">
-        <h1 class="title"><b>STEPS FOR STUDENTS</b></h1><br>
-        <div class="font">
-            <br>
-            <h2><b>Step 1:</b></h2> Find a team. The minimum number of members in a team is 2 and maximum is 4.<br>
-            <br>
-            <h2><b>Step 2:</b></h2>Take a look at our problem <a id="domain"> domains</a>.<br>
-            <br>
-            <h2><b>Step 3:</b></h2> Select a domain you wish to work on. Here, you have to find a problem statement
-            under that domain before you begin to work on a solution for it. Ex: Under the domain ‘Reduction of
-            Crime and Theft’, your problem statement may be ‘To provide a more feasible way to deal with theft
-            detection ’.<br>
-            <br>
-            <h2><b>Step 4:</b></h2>Register with us and send us your abstract at <b
-                style="color:skyblue;">techexpo6@gmail.com</b> .<br> The Last date for registering is September
-            21<sup>th</sup> (extended).<br> Registration fee is ₹100 per member which is to be paid if your abstract
-            is shortlisted. Only the team leader is supposed to submit the abstract on behalf of the team.<br>
-            <br>
-            <h2><b>Step 5:</b></h2> The shortlisted teams will be allowed to participate and exhibit their projects
-            on 6th October 2018.
-            <br>
-            <br>
-            <h2><b>All the best!</b></h2><br>
-            <br>
-            <h3>Location : <br></h3>
-        </div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31058.5820893395!2d77.11328483955077!3d13.33018770000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1534953702187"
-            width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </section>
-    <section class="sec4"></section>
-    <section id="sponsers" class="sec2 text-center">
-        <h1 class="title"><b>SPONSERS</b></h1><br>
-        <div class="container">
-            <div class="card">
-                <div class="imgbox">
-                    <img src="img/silver-and-black-laptop-computer-1229861.jpg" alt="">
-                </div>
-                <div class="details">
-                    <h2>Lorem, ipsum dolor.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi animi harum dolor
-                        voluptatibus fugiat incidunt, odio aliquam consequuntur non? Rerum deserunt cum iusto ea.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgbox">
-                    <img src="img/turned-on-laptop-with-flash-drive-plug-in-591647.jpg" alt="">
-                </div>
-                <div class="details">
-                    <h2>Lorem, ipsum dolor.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi animi harum dolor
-                        voluptatibus fugiat incidunt, odio aliquam consequuntur non? Rerum deserunt cum iusto ea.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="imgbox">
-                    <img src="img/brown-light-on-black-background-1108812.jpg" alt="">
-                </div>
-                <div class="details">
-                    <h2>Lorem, ipsum dolor.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi animi harum dolor
-                        voluptatibus fugiat incidunt, odio aliquam consequuntur non? Rerum deserunt cum iusto ea.</p>
-                </div>
-            </div>
-        </div>
-        <h3 class="font"> We are looking for sponsors! If you would like to sponsor our event, please do contact us!
-        </h3>
-    </section>
-    <section class="sec5"></section>
-    <section id="help" class="sec2 text-center">
-        <h1 class="title"><b>HELPDESK</b></h1><br>
-        <h3 class="font">
-            Mail us at : <b style="color:skyblue;">techexpo6@gmail.com</b><br><br>
-            <div class="text-center">Contact Us At :</div>
+        <section id="intro" class="sec2 container-fluid text-center">
+            <p>This facet of Tech-Expo consists of engineering students from various colleges across India to showcase
+                their
+                projects which solve real world problems currently existing in the society today. Check out list of
+                domains.
+                A stringent selection process will shortlist the best ideas/teams who can participate at this project
+                exhibition. Ample amount of time will be given to the shortlisted teams to prepare their projects for
+                the
+                same.
+            </p><br>
+            <h1 class="title"><b>PRIZE</b></h1><br>
+            <p>Attractive Cash Prizes for the Winning Teams</p><br>
             <div class="row">
-                <div class="col-lg-6">
-                    <br> Akash Kumar Srivastava : +91 7004332558
-                    <br> Pratik Kumar : +91 8553050984
+                <div class="first col-lg-4"><img src="img/1.png"><br><br>
+                    <p>1st Prize : ₹20000</p>
                 </div>
-                <div class="col-lg-6">
-                    <br> Spoorthy S : +91 7090539445
-                    <br> Lalitha Shree : +91 7338406532
+                <div class="first col-lg-4"><img src="img/2.png"><br><br>
+                    <p>2nd Prize : ₹15000</p>
                 </div>
-            </div>
-        </h3>
-    </section>
-    <div class="clock1">
-        <div id="clock">
-            <h2>the time is now</h2>
-            <div id="time">
-                <div><span id="hours">00</span><span>Hours</span></div>
-                <div><span id="minutes">00</span><span>Minutes</span></div>
-                <div><span id="seconds">00</span><span>Seconds</span></div>
-            </div>
-        </div>
+                <div class="first col-lg-4"><img src="img/3.png"><br><br>
+                    <p>3rd Prize : ₹12000</p>
+                </div>
+            </div><br><br>
+        </section>
     </div>
+
+    <div id="second">
+        <div class="steppbefore text-center">
+            <h1 class="title1"><b>STEPS FOR STUDENTS</b></h1><br>
+        </div>
+        <section id="stepp" class="sec2 container-fluid text-center sec22">
+            <div class="font">
+                <br>
+                <h2><b>Step 1:</b></h2> Find a team. The minimum number of members in a team is 2 and maximum is 4.<br>
+                <br>
+                <h2><b>Step 2:</b></h2>Take a look at our problem <a id="domain"> domains</a>.<br>
+                <br>
+                <h2><b>Step 3:</b></h2> Select a domain you wish to work on. Here, you have to find a problem statement
+                under that domain before you begin to work on a solution for it. Ex: Under the domain ‘Reduction of
+                Crime and Theft’, your problem statement may be ‘To provide a more feasible way to deal with theft
+                detection ’.<br>
+                <br>
+                <h2><b>Step 4:</b></h2>Register with us and send us your abstract at <b
+                    style="color:rgba(0, 142, 99, 1);">techexpo6@gmail.com</b> .<br> The Last date for registering is
+                March
+                24<sup>th</sup>.<br> Registration fee is ₹150 per member which is to be paid if your abstract
+                is shortlisted. Only the team leader is supposed to submit the abstract on behalf of the team.<br>
+                <br>
+                <h2><b>Step 5:</b></h2> The shortlisted teams will be allowed to participate and exhibit their projects
+                on 4<sup>th</sup> April 2020.
+                <br>
+                <br>
+                <h2><b>All the best!</b></h2><br>
+                <br>
+                <h3>Location : <br></h3>
+            </div>
+            <iframe class="frame"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31058.5820893395!2d77.11328483955077!3d13.33018770000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1534953702187"
+                width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+    </div>
+
+    <div id="third">
+        <div class="domainbefore text-center">
+            <h1 class="title"><b>DOMAINS</b></h1><br>
+        </div>
+        <section class="sec2 container-fluid" id="sponsers">
+            <div style="display: block;" class="active">
+                <ol id="domain" style="text-align: left;
+                font-size: 1.2em;
+                list-style-type: decimal;" class="pl-5 pl-md-5 ml-0 ml-lg-5">
+                    <li>Waste Management in Urban Area</li>
+                    <li>Solution to combat Global Warming / Climate Change</li>
+                    <li>Medical Solution that would increase average life expectancy of humans / animals </li>
+                    <li>Better techniques/machines for Agriculture </li>
+                    <li>Smarter ways of living (Ex:Smart Home model)</li>
+                    <li>Traffic Management in Urban Areas</li>
+                    <li>Women’s Safety</li>
+                    <li>Child Safety</li>
+                    <li>Child Labour Elimination</li>
+                    <li>Sanitation </li>
+                    <li>Improved Education System</li>
+                    <li>Improved Transport System in Urban Area</li>
+                    <li>Fossil Fuel Reduction </li>
+                    <li>Food (Ex: System to make sure the minimal nutrition is received by infants)</li>
+                    <li>Rural Area Improvement</li>
+                    <li>Revival of Rivers</li>
+                    <li>Improved Health Care Systems</li>
+                    <li>Revenue Strengthening System(Ex: Tourist Recommendation System)</li>
+                    <li>Smart Cities</li>
+                    <li>Fake News Differentiation</li>
+                    <li>Drug Addiction </li>
+                    <li>Delivery of Fresh drinking water</li>
+                    <li>Cleaner Energy</li>
+                    <li>Soil Erosion</li>
+                    <li>Faster Justice System in India (Ex: Build an intelligent model that can ensure improved Justice
+                        System)</li>
+                    <li>Accident Prevention</li>
+                    <li>Improved Connectivity </li>
+                    <li>Combat Power Shortage</li>
+                    <li>Improved Governance</li>
+                    <li>Space Technology </li>
+                    <li>Emergency Systems</li>
+                    <li>Reduction of Crime and Theft</li>
+                    <li>Employment </li>
+                    <li>Documentation (Ex:System that ensures easy documentation for the government.)</li>
+                    <li>Combating Poverty</li>
+                    <li>Safe Payment Mechanism</li>
+                    <li>National Security</li>
+                    <li>Improvement of Small Scale Industries</li>
+                    <li>Biomedical Devices and Aid for differently abled</li>
+                    <li>Endangerment of Animals (Ex:System to report the activity of endangered animals in specified
+                        area )
+                    </li>
+                    <li>Infrastructure</li>
+                    <li>Cyber Security</li>
+                    <li>Cyber Bullying</li>
+                    <li>Natural Disaster Survival</li>
+                    <li>Mental Health (Ex: System that can detect mental health issues based on behaviour/sleep pattern,
+                        etc)</li>
+                    <li>Violence and Abuse</li>
+                    <li>Improve the lives of Tribals in India </li>
+                    <li>Deforestation</li>
+                    <li>Data Security</li>
+                    <li>Preventing proliferation of weapons in the society (Ex: System that ensures limited number of
+                        guns
+                        in a locality)</li>
+                </ol>
+                <br>
+                <p><b>*If you have an idea that solves a real-world problem but does not come under any of the mentioned
+                        domains, just send us your idea and your own domain name, we will definitely review it! *</b>
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div id="sixth">
+        <div class="registerbefore text-center">
+            <h1 class="title"><b>REGISTER</b></h1><br>
+        </div>
+        <section class="sec2 container-fluid text-center" id="register">
+            <article style="display: block; padding-top: 60px;">
+                <h3>To Register Download the below linked form and after filling the details mail it to <b
+                        style="color:skyblue;">techexpo6@gmail.com</b> before March 24, 2020.</h3><br><br>
+                <a href="Register_For_Tech_Expo_2k20.docx"> <button
+                        class="btn btn-outline-info btn-lg">Download</button></a>
+            </article>
+        </section>
+    </div>
+
+    <div id="forth">
+        <div class="sponserbefore text-center">
+            <h1 class="title" style="color: white !important;"><b>SPONSORS</b></h1><br>
+        </div>
+        <section class="sec2 container-fluid text-center" id="sponsers">
+            <div class="spons">
+                <div class="container1">
+                    <div class="box">
+                        <div class="imgBx">
+                            <img src="img/sses-logo.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3><b>SSES</b></h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A eaque quisquam aliquid
+                                cupiditate
+                                quam
+                                dolore itaque eius id perferendis ad.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBx">
+                            <img src="img/csilogo.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3><b>Comp. Society</b></h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A eaque quisquam aliquid
+                                cupiditate
+                                quam
+                                dolore itaque eius id perferendis ad.</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBx">
+                            <img src="img/sses-logo.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3><b>SSES</b></h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A eaque quisquam aliquid
+                                cupiditate
+                                quam
+                                dolore itaque eius id perferendis ad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <h3 class="font"> We are looking for sponsors! If you would like to sponsor our event, please do contact us!
+            </h3>
+        </section>
+    </div>
+
+
+
+    <div id="fifth">
+        <div class="helpbefore text-center">
+            <h1 class="title"><b>HELPDESK</b></h1><br>
+        </div>
+        <section class="sec2 text-center">
+            <h3 class="font">
+                Mail us at : <b style="color:rgba(0, 142, 99, 1);">techexpo6@gmail.com</b><br><br>
+                <div class="text-center">Contact Us At :</div>
+                <div class="row">
+                    <div class="col-lg-6" id="cc">
+                        <br>
+                        Umang Gupta :<br> <span style="color: rgba(0, 142, 99, 1);">+91 9140894008 </span><br><br>
+                        Sumant Kumar :<br><span style="color: rgba(0, 142, 99, 1);">+91 7619481923 </span><br>
+                    </div>
+                </div>
+            </h3>
+        </section>
+    </div>
+
     <nav class="fixed-bottom footer text-center">
-        <h5>Developed By <i class="fas fa-heartbeat"></i> Suraj Jha</h5>
+        <h5>Developed By <a href="http://www.sitsark.in" style="color: rgba(0, 142, 99, 1); text-decoration: none;"
+                target="blank"> Suraj Kumar
+                Jha</a></h5>
     </nav>
+    <script src="JS/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script src="JS/particles.js"></script>
+    <script src="JS/countdown.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+            console.log('particles.json loaded...');
+        });
+    </script>
 </body>
 
 </html>
